@@ -64,9 +64,6 @@ const Gallery = () => {
                 className='object-cover transition-transform duration-500 ease-out group-hover:scale-105'
               />
               <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent' />
-              <div className='absolute bottom-4 left-4 rounded px-3 py-1.5 text-xs font-medium text-white' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
-                {p.label}
-              </div>
             </motion.figure>
           ))}
         </div>
