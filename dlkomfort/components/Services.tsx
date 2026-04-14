@@ -4,10 +4,10 @@ import { motion } from 'framer-motion'
 
 const services = [
   {
-    title: 'Sprzątanie biur',
-    tag: 'Regularne',
-    desc: 'Codzienne lub okresowe utrzymanie czystości w przestrzeniach biurowych — biurka, sanitariaty, kuchnie socjalne, dezynfekcja powierzchni wspólnych.',
-    bullets: ['Stały zespół', 'Własny sprzęt', 'Elastyczny grafik'],
+    title: 'Regularne sprzątanie biur',
+    tag: 'Najpopularniejsze',
+    desc: 'Przychodzimy codziennie lub w ustalonych dniach. Czyścimy biurka, sanitariaty, kuchnie socjalne i dezynfekujemy powierzchnie wspólne. Stały zespół który zna Państwa biuro na pamięć.',
+    bullets: ['Stała ekipa — te same osoby za każdym razem', 'Własny sprzęt i środki czystości w cenie', 'Elastyczny grafik dopasowany do biura'],
     icon: (
       <>
         <rect x='3' y='4' width='18' height='14' rx='2' />
@@ -21,8 +21,8 @@ const services = [
   {
     title: 'Sprzątanie po remoncie',
     tag: 'Deep clean',
-    desc: 'Profesjonalne usuwanie pyłu budowlanego, resztek cementu, gipsu i farb. Mycie okien, posadzek i elementów wyposażenia po zakończeniu prac.',
-    bullets: ['Ciężki pył', 'Plamy po farbie', 'Mycie okien'],
+    desc: 'Pył budowlany, resztki gipsu, kleje i farby to nie nasza pierwsza taka robota. Wchodzimy po ekipie remontowej i oddajemy biuro gotowe do pracy — jeszcze tego samego dnia.',
+    bullets: ['Usuwanie pyłu i resztek materiałów', 'Mycie okien, posadzek i stolarki', 'Możliwość realizacji w jeden dzień'],
     icon: (
       <>
         <path d='M12 2l2.39 4.84L20 8l-4 3.9.94 5.5L12 14.8l-4.94 2.6L8 11.9 4 8l5.61-1.16L12 2z' />
@@ -30,10 +30,10 @@ const services = [
     )
   },
   {
-    title: 'Szkoły i wspólnoty',
+    title: 'Szkoły i wspólnoty mieszkaniowe',
     tag: 'Obiekty publiczne',
-    desc: 'Sprzątanie klatek schodowych, sal lekcyjnych, sanitariatów i części wspólnych nieruchomości. Współpraca z administratorami i dyrekcjami.',
-    bullets: ['Klatki schodowe', 'Sale lekcyjne', 'Tereny zewnętrzne'],
+    desc: 'Obsługujemy klatki schodowe, sale lekcyjne, korytarze i tereny zewnętrzne. Rozliczenie z administratorem lub dyrekcją, stały harmonogram i raportowanie.',
+    bullets: ['Klatki schodowe i części wspólne', 'Sale lekcyjne i sanitariaty', 'Rozliczenie bezpośrednio z zarządcą'],
     icon: (
       <>
         <path d='M3 10l9-6 9 6' />

@@ -79,12 +79,10 @@ const ContactForm = () => {
             Kontakt
           </span>
           <h2 className='mt-5 text-4xl font-bold tracking-tightest sm:text-5xl lg:text-6xl'>
-            Umów bezpłatną <br />
-            <span className='text-brand-yellow'>wycenę</span>.
+            Ile kosztuje sprzątanie mojego biura?
           </h2>
           <p className='mt-5 max-w-md text-white/70'>
-            Wypełnij krótki formularz — oddzwonimy w ciągu 24 godzin z wyceną
-            dopasowaną do Twojego obiektu. Bez zobowiązań.
+            Wypełnij formularz — oddzwaniamy w ciągu 24 godzin z wyceną. Bez zobowiązań, bez sprzedawania na siłę.
           </p>
 
           <div className='mt-10 space-y-4'>
@@ -217,8 +215,7 @@ const ContactForm = () => {
           </button>
 
           <p className='mt-4 text-xs text-brand-dark/50'>
-            Wysyłając formularz zgadzasz się na przetwarzanie danych w celu
-            przedstawienia oferty. Nie przekazujemy ich osobom trzecim.
+            Oddzwaniamy zazwyczaj w ciągu kilku godzin. Nie wysyłamy spamu.
           </p>
         </form>
       </div>

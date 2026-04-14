@@ -45,13 +45,9 @@ const Hero = () => (
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className='mt-6 text-5xl font-bold leading-[1.02] tracking-tightest text-white sm:text-6xl lg:text-[84px]'
         >
-          Czyste biuro
+          Twoje biuro czyste.
           <br />
-          to <span className='relative inline-block'>
-            <span className='relative z-10'>lepszy</span>
-            <span className='absolute bottom-2 left-0 -z-0 h-4 w-full rounded bg-brand-yellow/80 sm:bottom-3 sm:h-5' />
-          </span>{' '}
-          <span className='text-brand-yellow'>biznes.</span>
+          Bez Twojej <span className='text-brand-yellow'>głowy.</span>
         </motion.h1>
 
         <motion.p
@@ -59,8 +55,7 @@ const Hero = () => (
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className='mt-7 max-w-xl text-lg text-white/95 sm:text-xl'
         >
-          Kompleksowe sprzątanie biur, szkół i wspólnot mieszkaniowych w Warszawie.
-          Zespół z doświadczeniem, własny sprzęt, ekologiczne środki.
+          Przyjeżdżamy o ustalonej godzinie, sprzątamy własnym sprzętem i środkami, a Ty rano zastajesz gotowe biuro. Bez pilnowania, bez reklamacji.
         </motion.p>
 
         <motion.div
@@ -72,7 +67,7 @@ const Hero = () => (
             href='#kontakt'
             className='group inline-flex items-center gap-2 rounded-full bg-brand-yellow px-7 py-4 text-base font-semibold text-brand-dark shadow-soft-yellow outline-none transition-[transform,box-shadow] duration-200 hover:-translate-y-0.5 hover:shadow-[0_24px_50px_-18px_rgba(255,215,0,0.7)] focus-visible:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-brand-yellow focus-visible:ring-offset-2 focus-visible:ring-offset-brand-dark active:translate-y-0'
           >
-            Umów wycenę
+            Chcę bezpłatną wycenę
             <svg width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2.5' strokeLinecap='round' strokeLinejoin='round' className='transition-transform duration-200 group-hover:translate-x-1'>
               <path d='M5 12h14' />
               <path d='M13 5l7 7-7 7' />
@@ -95,9 +90,9 @@ const Hero = () => (
           className='mt-14 grid max-w-2xl grid-cols-3 gap-6 border-t border-white/10 pt-8'
         >
           {[
-            { k: '7+', v: 'lat doświadczenia' },
-            { k: '200+', v: 'obiektów miesięcznie' },
-            { k: '24/7', v: 'dostępność' }
+            { k: '7+', v: 'lat na rynku' },
+            { k: '200+', v: 'obsługiwanych obiektów' },
+            { k: '24h', v: 'czas odpowiedzi na zapytanie' }
           ].map((s) => (
             <div key={s.v}>
               <dt className='text-3xl font-bold text-white sm:text-4xl'>{s.k}</dt>

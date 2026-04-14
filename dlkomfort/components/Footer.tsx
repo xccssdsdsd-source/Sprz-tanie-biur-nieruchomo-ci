@@ -15,6 +15,7 @@ const Footer = () => (
         <div>
           <div className='text-xs font-semibold uppercase tracking-[0.18em] text-brand-yellow'>Nawigacja</div>
           <ul className='mt-4 space-y-2 text-sm'>
+            <li><a href='#dlaczego-my' className='text-white/80 outline-none transition-colors hover:text-brand-yellow focus-visible:text-brand-yellow'>Dlaczego my</a></li>
             <li><a href='#uslugi' className='text-white/80 outline-none transition-colors hover:text-brand-yellow focus-visible:text-brand-yellow'>Usługi</a></li>
             <li><a href='#realizacje' className='text-white/80 outline-none transition-colors hover:text-brand-yellow focus-visible:text-brand-yellow'>Realizacje</a></li>
             <li><a href='#kontakt' className='text-white/80 outline-none transition-colors hover:text-brand-yellow focus-visible:text-brand-yellow'>Kontakt</a></li>
