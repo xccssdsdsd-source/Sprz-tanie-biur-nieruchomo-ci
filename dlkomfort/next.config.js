@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  generateBuildId: async () => null,
+  generateBuildId: async () => 'dlkomfort-build',
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'placehold.co' },
