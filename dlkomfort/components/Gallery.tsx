@@ -16,7 +16,7 @@ const Gallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
-    const handleKeyDown = (e) => {
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (!lightboxOpen) return
       if (e.key === 'Escape') setLightboxOpen(false)
       if (e.key === 'ArrowLeft') setCurrentIndex((i) => (i - 1 + photos.length) % photos.length)

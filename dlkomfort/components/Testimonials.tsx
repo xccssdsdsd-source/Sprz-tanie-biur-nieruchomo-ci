@@ -55,7 +55,7 @@ const Testimonials = () => (
               ))}
             </div>
             <blockquote className='mt-5 text-[15px] leading-relaxed text-brand-dark'>
-              "{t.quote}"
+              &ldquo;{t.quote}&rdquo;
             </blockquote>
             <div className='mt-6 border-t border-brand-dark/10 pt-5'>
               <div className='font-semibold text-brand-dark'>{t.name}</div>
