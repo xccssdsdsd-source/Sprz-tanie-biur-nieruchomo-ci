@@ -19,7 +19,7 @@ const Hero = () => (
         sizes='100vw'
         className='object-cover mix-blend-multiply'
       />
-      <div className='absolute inset-0 bg-gradient-to-b from-brand-dark/85 via-brand-dark/70 to-brand-dark/90' />
+      <div className='absolute inset-0 bg-gradient-to-b from-brand-dark/95 via-brand-dark/85 to-brand-dark/95' />
       <div className='absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,215,0,0.18),transparent_55%)]' />
       <div className='grain absolute inset-0' />
     </div>
@@ -57,7 +57,7 @@ const Hero = () => (
         <motion.p
           variants={fade}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className='mt-7 max-w-xl text-lg text-white/80 sm:text-xl'
+          className='mt-7 max-w-xl text-lg text-white/95 sm:text-xl'
         >
           Kompleksowe sprzątanie biur, szkół i wspólnot mieszkaniowych w Warszawie.
           Zespół z doświadczeniem, własny sprzęt, ekologiczne środki.
