@@ -45,9 +45,9 @@ const Hero = () => (
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className='mt-6 text-5xl font-bold leading-[1.02] tracking-tightest text-white sm:text-6xl lg:text-[84px]'
         >
-          Twoje biuro czyste.
+          Czyste biuro,
           <br />
-          Bez Twojej <span className='text-brand-yellow'>głowy.</span>
+          o które <span className='text-brand-yellow'>nie musisz się martwić.</span>
         </motion.h1>
 
         <motion.p
@@ -55,7 +55,7 @@ const Hero = () => (
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className='mt-7 max-w-xl text-lg text-white/95 sm:text-xl'
         >
-          Przyjeżdżamy o ustalonej godzinie, sprzątamy własnym sprzętem i środkami, a Ty rano zastajesz gotowe biuro. Bez pilnowania, bez reklamacji.
+          Przychodzimy o umówionej godzinie, przywozimy własny sprzęt i środki. Rano zastajesz gotowe biuro — nie musisz nic pilnować ani sprawdzać.
         </motion.p>
 
         <motion.div
