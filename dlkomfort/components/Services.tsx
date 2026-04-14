@@ -45,11 +45,12 @@ const services = [
 ]
 
 const Services = () => (
-  <section id='uslugi' className='relative bg-white py-24 sm:py-32'>
+  <section id='uslugi' className='relative bg-[#F5F3EF] py-24 sm:py-32'>
+    <div className='pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(255,215,0,0.1),transparent_55%)]' />
     <div className='mx-auto max-w-7xl px-5 sm:px-8'>
-      <div className='flex flex-col items-start justify-between gap-6 md:flex-row md:items-end'>
+      <div className='relative flex flex-col items-start justify-between gap-6 md:flex-row md:items-end'>
         <div className='max-w-2xl'>
-          <span className='inline-flex items-center gap-2 rounded-full bg-brand-yellow/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-dark'>
+          <span className='inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-brand-dark shadow-[0_1px_0_rgba(0,0,0,0.04)]'>
             <span className='h-1.5 w-1.5 rounded-full bg-brand-yellow' />
             Usługi
           </span>
@@ -73,7 +74,7 @@ const Services = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.55, delay: i * 0.08, ease: 'easeOut' }}
-            className='group relative flex flex-col overflow-hidden rounded-3xl border border-black/5 bg-gradient-to-b from-white to-[#F6F6F4] p-8 shadow-soft-lg transition-transform duration-300 hover:-translate-y-1'
+            className='group relative flex flex-col overflow-hidden rounded-3xl border border-black/[0.06] bg-white p-8 shadow-[0_20px_40px_-20px_rgba(17,17,17,0.12),0_4px_12px_-4px_rgba(17,17,17,0.06)] transition-transform duration-300 hover:-translate-y-1'
           >
             <div className='absolute -right-12 -top-12 h-44 w-44 rounded-full bg-brand-yellow/0 blur-2xl transition-[background-color] duration-500 group-hover:bg-brand-yellow/35' />
 

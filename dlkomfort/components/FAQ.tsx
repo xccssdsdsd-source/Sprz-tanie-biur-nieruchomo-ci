@@ -42,14 +42,14 @@ const FAQ = () => {
           </h2>
         </div>
 
-        <div className='space-y-4'>
+        <div className='space-y-2.5'>
           {faqs.map((faq, i) => (
-            <div key={i} className='overflow-hidden rounded-3xl border border-black/5 bg-gradient-to-b from-white to-[#F6F6F4]'>
+            <div key={i} className='overflow-hidden rounded-2xl border border-black/[0.06] bg-white shadow-[0_4px_12px_-4px_rgba(17,17,17,0.06)]'>
               <button
                 onClick={() => setOpenIndex(openIndex === i ? -1 : i)}
                 className='w-full flex items-center justify-between gap-4 px-8 py-5 text-left outline-none transition-colors hover:bg-brand-yellow/5 focus-visible:bg-brand-yellow/5'
               >
-                <span className='text-lg font-bold tracking-tightest text-brand-dark'>{faq.q}</span>
+                <span className='text-base font-semibold text-brand-dark'>{faq.q}</span>
                 <svg
                   width='20'
                   height='20'

@@ -34,7 +34,7 @@ const Footer = () => (
       </div>
 
       <div className='mt-12 flex flex-col items-start justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/50 sm:flex-row sm:items-center'>
-        <div>© 2025 DL Komfort. Wszelkie prawa zastrzeżone.</div>
+        <div>© 2026 DL Komfort. Wszelkie prawa zastrzeżone.</div>
         <div>Warszawa, Polska</div>
       </div>
     </div>

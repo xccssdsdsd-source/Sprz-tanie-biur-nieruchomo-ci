@@ -49,7 +49,7 @@ const WhyUs = () => (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.55, delay: i * 0.08, ease: 'easeOut' }}
-              className='group relative flex flex-col overflow-hidden rounded-3xl border border-black/5 bg-gradient-to-b from-white to-[#F6F6F4] p-8 shadow-soft-lg transition-transform duration-300 hover:-translate-y-1'
+              className='group relative flex flex-col overflow-hidden rounded-3xl border border-black/[0.06] bg-white p-8 shadow-[0_20px_40px_-20px_rgba(17,17,17,0.12),0_4px_12px_-4px_rgba(17,17,17,0.06)] transition-transform duration-300 hover:-translate-y-1'
             >
               <div className='absolute -right-12 -top-12 h-44 w-44 rounded-full bg-brand-yellow/0 blur-2xl transition-[background-color] duration-500 group-hover:bg-brand-yellow/35' />
               <div className='relative flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-dark text-brand-yellow shadow-[inset_0_0_0_1px_rgba(255,215,0,0.2)]'>

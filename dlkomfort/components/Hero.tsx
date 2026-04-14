@@ -87,16 +87,16 @@ const Hero = () => (
         <motion.dl
           variants={fade}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className='mt-14 grid max-w-2xl grid-cols-3 gap-6 border-t border-white/10 pt-8'
+          className='mt-14 grid max-w-2xl grid-cols-3 divide-x divide-white/10 border-t border-white/10 pt-8'
         >
           {[
             { k: '7+', v: 'lat na rynku' },
             { k: '200+', v: 'obsługiwanych obiektów' },
             { k: '24h', v: 'czas odpowiedzi na zapytanie' }
           ].map((s) => (
-            <div key={s.v}>
+            <div key={s.v} className='pl-6 first:pl-0'>
               <dt className='text-3xl font-bold text-white sm:text-4xl'>{s.k}</dt>
-              <dd className='mt-1 text-sm text-white/60'>{s.v}</dd>
+              <dd className='mt-1 text-sm text-white/55 leading-snug'>{s.v}</dd>
             </div>
           ))}
         </motion.dl>

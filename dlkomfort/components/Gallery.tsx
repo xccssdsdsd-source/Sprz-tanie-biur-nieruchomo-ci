@@ -63,7 +63,8 @@ const Gallery = () => {
                 priority={i === 0}
                 className='object-cover transition-transform duration-500 ease-out group-hover:scale-105'
               />
-              <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent' />
+              <div className='pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent' />
+              <p className='pointer-events-none absolute bottom-4 left-4 right-4 text-xs font-semibold uppercase tracking-[0.14em] text-white/90'>{p.label}</p>
             </motion.figure>
           ))}
         </div>

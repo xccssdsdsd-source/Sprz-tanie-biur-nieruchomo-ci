@@ -8,7 +8,7 @@ const items = [
     )
   },
   {
-    label: 'Telefon (2)',
+    label: 'Telefon 2',
     value: '784 604 220',
     href: 'tel:784604220',
     icon: (

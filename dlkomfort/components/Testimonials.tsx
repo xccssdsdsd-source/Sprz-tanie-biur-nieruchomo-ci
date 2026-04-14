@@ -47,19 +47,25 @@ const Testimonials = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-80px' }}
             transition={{ duration: 0.55, delay: i * 0.08, ease: 'easeOut' }}
-            className='relative flex flex-col rounded-3xl border-l-4 border-brand-yellow bg-white p-7 shadow-[0_20px_45px_-25px_rgba(20,20,20,0.15)]'
+            className='relative flex flex-col overflow-hidden rounded-3xl border border-black/[0.06] bg-white p-8 shadow-[0_20px_40px_-20px_rgba(17,17,17,0.12),0_4px_12px_-4px_rgba(17,17,17,0.06)]'
           >
+            <div className='absolute inset-x-0 top-0 h-0.5 bg-brand-yellow' />
             <div className='flex gap-1'>
               {[...Array(5)].map((_, j) => (
-                <Star key={j} size={16} className='fill-brand-yellow text-brand-yellow' />
+                <Star key={j} size={15} className='fill-brand-yellow text-brand-yellow' />
               ))}
             </div>
-            <blockquote className='mt-5 text-[15px] leading-relaxed text-brand-dark'>
+            <blockquote className='mt-5 flex-1 text-[15px] leading-[1.75] text-brand-dark/80'>
               &ldquo;{t.quote}&rdquo;
             </blockquote>
-            <div className='mt-6 border-t border-brand-dark/10 pt-5'>
-              <div className='font-semibold text-brand-dark'>{t.name}</div>
-              <div className='text-xs text-brand-dark/60'>{t.role}</div>
+            <div className='mt-6 flex items-center gap-3 border-t border-black/[0.07] pt-5'>
+              <div className='flex h-9 w-9 flex-none items-center justify-center rounded-full bg-brand-yellow text-sm font-bold text-brand-dark'>
+                {t.name.charAt(0)}
+              </div>
+              <div>
+                <div className='text-sm font-semibold text-brand-dark'>{t.name}</div>
+                <div className='text-xs text-brand-dark/55'>{t.role}</div>
+              </div>
             </div>
           </motion.article>
         ))}
