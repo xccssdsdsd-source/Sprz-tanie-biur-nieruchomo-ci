@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pobierz Excel — leady nieruchomościowe</title>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <style>
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f3f6fb;font-family:Arial,sans-serif;color:#0a1628}.box{width:min(620px,92vw);background:#fff;padding:38px;border-radius:18px;box-shadow:0 18px 55px rgba(10,22,40,.14);text-align:center}h1{margin:0 0 12px;font-size:28px}p{color:#475569;line-height:1.55;margin:0 0 24px}button{width:100%;border:0;border-radius:12px;padding:17px 24px;background:#2563eb;color:#fff;font-weight:700;font-size:17px;cursor:pointer}button:hover{background:#1d4ed8}button:disabled{opacity:.65;cursor:wait}#status{margin-top:18px;font-weight:600;color:#334155}.small{margin-top:16px;font-size:13px;color:#64748b}
+  </style>
+</head>
+<body>
+  <main class="box">
+    <h1>Leady nieruchomościowe GetBuild.pl</h1>
+    <p>Kliknij przycisk. Przeglądarka pobierze prawdziwy plik <strong>Excel .xlsx</strong>, który można otworzyć w Excelu albo przesłać do Google Sheets.</p>
+    <button id="download">Pobierz plik Excel (.xlsx)</button>
+    <div id="status"></div>
+    <div class="small">Plik jest generowany w Twojej przeglądarce. Nie wymaga konta ani uprawnień do dysku.</div>
+  </main>
+<script>
+const csvUrl='https://raw.githubusercontent.com/xccssdsdsd-source/Sprz-tanie-biur-nieruchomo-ci/main/leady_nieruchomosci_do_cold_callingu.csv';
+const button=document.getElementById('download');
+const status=document.getElementById('status');
+
+button.addEventListener('click', async () => {
+  button.disabled=true;
+  status.textContent='Przygotowywanie pliku Excel…';
+  try {
+    if(typeof XLSX==='undefined') throw new Error('Nie załadowano modułu Excel');
+    const response=await fetch(csvUrl+'?v='+Date.now(),{cache:'no-store'});
+    if(!response.ok) throw new Error('Nie udało się pobrać listy');
+    let csv=await response.text();
+    csv=csv.replace(/^\uFEFF/,'');
+    const workbook=XLSX.read(csv,{type:'string',FS:';',raw:false});
+    const worksheet=workbook.Sheets[workbook.SheetNames[0]];
+    worksheet['!cols']=[
+      {wch:11},{wch:34},{wch:20},{wch:20},{wch:28},{wch:36},{wch:42},{wch:18},{wch:85}
+    ];
+    worksheet['!autofilter']={ref:worksheet['!ref']};
+    XLSX.writeFile(workbook,'leady_nieruchomosci_do_cold_callingu.xlsx',{compression:true});
+    status.textContent='Gotowe — pobieranie pliku .xlsx zostało rozpoczęte.';
+  } catch (error) {
+    console.error(error);
+    status.textContent='Nie udało się wygenerować pliku. Odśwież stronę i kliknij ponownie.';
+  } finally {
+    button.disabled=false;
+  }
+});
+</script>
+</body>
+</html>
